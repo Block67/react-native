@@ -23,6 +23,17 @@ export default function TabLayout() {
           ),
         }}
       />
+
+      <Tabs.Screen
+          name="contact"
+          options={{
+            title: 'Contact',
+            tabBarIcon: ({ color, focused }) => (
+              <TabBarIcon name={focused ? 'people' : 'people-outline'} color={color} />
+            ),
+          }}
+        />
+
       <Tabs.Screen
         name="explore"
         options={{
